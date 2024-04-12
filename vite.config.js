@@ -8,8 +8,7 @@ export default defineConfig({
   publicDir: 'public',
   envPrefix: 'PUBLIC_',
   build: {
-    manifest: true,
-    outDir: '../build',
+    outDir: './build',
   },
   server: {
     open: true,
