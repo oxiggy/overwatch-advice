@@ -5,10 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/overwatch-advice/',
+  root: 'src',
   publicDir: 'public',
   envPrefix: 'PUBLIC_',
+  manifest: true,
   build: {
-    outDir: './build',
+    manifest: true,
+    outDir: '../build',
   },
   server: {
     open: true,
